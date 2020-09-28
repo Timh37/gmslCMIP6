@@ -18,5 +18,10 @@ is done using *cmip6_get_areawmean.py*, which requires gridded data as well as a
 # Dedrifting 'zostoga'
 Expects input to be time-merged (e.g., using *cmip6_merge_raw_timechunks.py*), and organized per model directory. Two flavours of dedrifting using piControl experiments are available: 1) linear dedrifting, which fits a linear polynomial to the full piControl time series, and subtracts that from the historical and SSP experiments, 2) quadratic dedrifting, which fits a quadratic polynomial to the full piControl time series, and subtracts the **overlapping** part of the piControl run from historical and SSP experiments. 2) requires additional information on the branch times of historical in piControl, and ssps in historical. This information is available from metadata, but is for some models inconsistent, and so less generic than 1). 1) yields small differences to 2) compared to any forced signal over the 21st century (Hermans et al., 2020, submitted to GRL).  
 
+*to-do: upload scripts to store data in NetCDFs*
+
+# Analysis Demo's
+
+*to-do*
 
 Required Python packages: xarray, numpy, fnmatch, cdo
