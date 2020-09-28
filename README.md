@@ -2,7 +2,7 @@
 This repository contains several scripts that were used for the submitted manuscript **Projecting Global Mean Sea-Level Change Using CMIP6 Models** by Hermans et al. (2020). The repository can be used for pulling CMIP6 data (for example, gridded surface air temperature 'tas' and global mean thermosteric sea-level change 'zostoga') from ESGF using WGET, preprocessing raw (monthly mean, but probably also other frequencies) 'zostoga' and 'tas' data, including time-merging, dedrifting and calculating area-weighted means, and analyzing the preprocessed data. The underlying data will also be made available at: http://doi.org/10.4121/12958079.
 
 # Downloading
-Instructions for running the WGET script can be found here: https://esgf.github.io/esgf-user-support/user_guide.html#download-data-from-esgf-using-wget, for example using:
+Instructions for running the WGET script can be found here: https://esgf.github.io/esgf-user-support/user_guide.html#download-data-from-esgf-using-wget. For example, using
 
 ```
 bash wget-20200715133532_zostoga.sh
