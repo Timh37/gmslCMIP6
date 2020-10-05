@@ -23,6 +23,5 @@ The dedrifting scripts loop over each model and experiment. The input is expecte
 # Analysis example
 The GTE and GSAT data (available at http://doi.org/10.4121/12958079, or collected through the above downloading and preprocessing procedure), can conveniently be plotted using xarray. *plot_GTE_GSAT_CMIP5_CMIP6.py* demonstrates this for CMIP5 and CMIP6 data, and produces Figure 1 of the manuscript. 
 
-*to-do: upload this script*
-
+---
 Required Python packages: xarray, numpy, fnmatch, cdo
