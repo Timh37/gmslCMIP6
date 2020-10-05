@@ -55,7 +55,8 @@ def cmip6_merge_raw_timechunks(in_dir,out_dir,variable):
                             continue
                         else: #if data can be concatenated
                             filenames = fnmatch.filter(os.listdir(model_dir), "*"+run+"*"+variant+'*'+grid+"*.nc") #get filenames
-                            fileyears = [fn.split('_')[6] for fn in filenames] #extract start/end dates from filenames
+                            #fileyears = [fn.split('_')[6] for fn in filenames] #extract start/end dates from filenames
+                            fileyears = [fn[-16:-3] for fn in filenames]
                             
                             #save concatenated time series to netcdf
                             if not os.path.exists(out_dir): #generate output directory
