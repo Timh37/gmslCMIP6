@@ -161,9 +161,10 @@ def cmip6_dedrift_linear(in_dir,out_dir,variable):
     
 ### for testing:
 '''
-variable = 'zostoga'
-in_dir = '/Volumes/Naamloos/PhD_Data/CMIP6/downloading/07_2020/time_merged/' + variable #set raw, time-merged zostoga directory
-out_dir = '/Volumes/Naamloos/PhD_Data/CMIP6/downloading/07_2020/linear_dedrifted/' + variable #set output directory
+if __name__ == '__main__':
+    variable = 'zostoga'
+    in_dir = '/Volumes/Naamloos/PhD_Data/CMIP6/downloading/07_2020/time_merged/' + variable #set raw, time-merged zostoga directory
+    out_dir = '/Volumes/Naamloos/PhD_Data/CMIP6/downloading/07_2020/linear_dedrifted/' + variable #set output directory
 
-cmip6_dedrift_linear(in_dir,out_dir,variable)
+    cmip6_dedrift_linear(in_dir,out_dir,variable)
 '''
