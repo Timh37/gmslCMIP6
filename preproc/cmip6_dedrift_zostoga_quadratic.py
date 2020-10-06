@@ -240,10 +240,9 @@ def cmip6_dedrift_zostoga_quadratic(in_dir,out_dir):
             pic.close()
 #for testing
 '''
-### set paths and script options
+if __name__ == '__main__':
+    in_dir = '/Volumes/Naamloos/PhD_Data/CMIP6/time_merged/zostoga/' #set raw, time-merged zostoga directory
+    out_dir = '/Volumes/Naamloos/PhD_Data/CMIP6/dedrifted_quadratic/test/' #set output directory
 
-in_dir = '/Volumes/Naamloos/PhD_Data/CMIP6/time_merged/zostoga/' #set raw, time-merged zostoga directory
-out_dir = '/Volumes/Naamloos/PhD_Data/CMIP6/dedrifted_quadratic/test/' #set output directory
-
-cmip6_dedrift_zostoga_quadratic(in_dir,out_dir)
+    cmip6_dedrift_zostoga_quadratic(in_dir,out_dir)
 '''
