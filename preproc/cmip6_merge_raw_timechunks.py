@@ -75,10 +75,10 @@ def cmip6_merge_raw_timechunks(in_dir,out_dir,variable):
                             except:
                                 print('could not save: '+filenames[0][0:-16]+fileyears[0][0:6]+'-'+fileyears[-1][7::])
 '''
-### for testing:
-variable = 'zostoga'
-in_dir = '/Volumes/Naamloos/PhD_Data/CMIP6/downloading/' + variable #+'/'+model+'/'
-out_dir = '/Volumes/Naamloos/PhD_Data/CMIP6/test_mergetime/'+variable
+if __name__ == '__main__':
+    variable = 'zostoga'
+    in_dir = '/Volumes/Naamloos/PhD_Data/CMIP6/downloading/' + variable #+'/'+model+'/'
+    out_dir = '/Volumes/Naamloos/PhD_Data/CMIP6/test_mergetime/'+variable
 
-cmip6_merge_raw_timechunks(in_dir,out_dir,variable)
+    cmip6_merge_raw_timechunks(in_dir,out_dir,variable)
 '''
