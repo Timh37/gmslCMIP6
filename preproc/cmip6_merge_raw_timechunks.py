@@ -69,7 +69,7 @@ def cmip6_merge_raw_timechunks(in_dir,out_dir,variable):
                                 
                             try: #concatenate using CDO (fast & easy) & compress
                                 cdo.cat(input=model_dir+'/*'+run+'*'+variant+'*'+grid+'*.nc',
-                                        output=os.path.join(out_dir,model,filenames[0][0:-16]+fileyears[0][0:6]+'-'+fileyears[-1][7::]),
+                                        output=os.path.join(out_dir,model,filenames[0][0:-16]+fileyears[0][0:6]+'-'+fileyears[-1][7::]+'.nc'),
                                         options='-z zip_1')
                                 print('saved: '+filenames[0][0:-16]+fileyears[0][0:6]+'-'+fileyears[-1][7::])
                             except:
