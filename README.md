@@ -27,7 +27,7 @@ The dedrifting scripts loop over each model and experiment. The input is expecte
 The script *zostoga_tas_ens_to_netcdf.py* is included to pool the dedrifted 'zostoga' and global area-weighted mean 'tas' historical and SSP experiments for each model into a mluit-model ensemble. The logic applied here, which could be adapted as the user sees fit, is to include only models that have both variables, for both experiments, for each of the desired and configurable emissions scenarios. Historical and SSP data must have the same grid and variant,and the script stores this information in the meta data. The script appends the historical and scenario runs for a target period, and missing values are filled through interpolation. The time series are referenced to a common base year period. 
 
 # Analysis example
-The GTE and GSAT data (available at http://doi.org/10.4121/12958079, or collected through the above downloading and preprocessing procedure), can be plotted using xarray. *plot_GTE_GSAT_CMIP5_CMIP6_qnts_curves.py* demonstrates this for CMIP5 and CMIP6 data, and reproduces Figure 1 of the manuscript. 
+The CMIP6 GTE and GSAT data (available at http://doi.org/10.4121/12958079, or collected through the above downloading and preprocessing procedure), can be plotted using xarray. *plot_GTE_GSAT_CMIP5_CMIP6_qnts_curves.py* demonstrates this for CMIP5 and CMIP6 data, and reproduces Figure 1 of the manuscript. 
 
 ---
 Required Python packages: xarray, numpy, fnmatch, cdo
