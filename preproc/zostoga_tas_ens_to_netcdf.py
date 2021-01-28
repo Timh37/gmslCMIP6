@@ -29,9 +29,9 @@ import os
 targ_years = np.arange(1850,2101)
 base_years = np.arange(1986,2006)
 scenarios = ['ssp126','ssp245','ssp585']
-zostoga_path = '/Volumes/Naamloos/PhD_Data/CMIP6/dedrifted_quadratic/zostoga/'
-tas_path = '/Volumes/Naamloos/PhD_Data/CMIP6/time_merged/tas/'
-output_path = '/Volumes/Naamloos/PhD_Data/CMIP6/zostoga_tas_ens/'
+zostoga_path = 'insert_path_here/zostoga/'
+tas_path = 'insert_path_here/tas/'
+output_path = 'insert_path_here/zostoga_tas_ens/'
 
 #pool zostoga and tas data
 zostoga_am_ds = includeCMIP6zostoga(zostoga_path,scenarios,targ_years)
