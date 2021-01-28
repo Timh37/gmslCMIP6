@@ -1,5 +1,11 @@
 # gmslCMIP6
-This repository contains several scripts that were used for the manuscript **Projecting Global Mean Sea-Level Change Using CMIP6 Models** (to-do: add DOI) by Hermans et al. (2021), which is premised on global thermal expansion (GTE) and global surface air temperature (GSAT) data from CMIP6 models. The repository can be used for pulling CMIP6 data (in this case, global mean thermosteric sea-level change 'zostoga', gridded surface air temperature 'tas' and atmosphere cell area 'areacella') from ESGF using WGET, preprocessing raw (monthly mean intended, but possibly also other frequencies) 'zostoga' and 'tas' data, including time-merging, dedrifting and calculating area-weighted means, and analyzing the preprocessed data. The underlying data of the manuscript is available at: http://doi.org/10.4121/12958079.
+This repository contains several scripts that were used for the results of:
+
+```
+T. H. J. Hermans, J. M. Gregory, M. D. Palmer, M. Ringer, C. A. Katsman, A. B. A. Slangen (2021). Projecting Global Mean Sea-Level Change Using CMIP6 Models. Submitted to GRL, doi TBD.
+```
+
+Please cite that manuscript when using our scripts for future work. The manuscript is premised on global thermal expansion (GTE) and global surface air temperature (GSAT) data from CMIP6 models. This repository can be used for pulling CMIP6 data (in this case, global mean thermosteric sea-level change 'zostoga', gridded surface air temperature 'tas' and atmosphere cell area 'areacella') from ESGF using WGET, preprocessing raw (monthly mean intended, but possibly also other frequencies) 'zostoga' and 'tas' data, including time-merging, dedrifting and calculating area-weighted means, and analyzing the preprocessed data. The underlying data of the manuscript is available at: http://doi.org/10.4121/12958079.
 
 # Downloading with WGET
 Instructions for running the WGET scripts can be found here: https://esgf.github.io/esgf-user-support/user_guide.html#download-data-from-esgf-using-wget. For example, using
