@@ -2,7 +2,8 @@
 This repository contains several scripts that were used for the results of:
 
 ```
-T. H. J. Hermans, J. M. Gregory, M. D. Palmer, M. Ringer, C. A. Katsman, A. B. A. Slangen (2021). Projecting Global Mean Sea-Level Change Using CMIP6 Models. Submitted to GRL, doi TBD.
+T. H. J. Hermans, J. M. Gregory, M. D. Palmer, M. Ringer, C. A. Katsman, A. B. A. Slangen (2021). 
+Projecting Global Mean Sea-Level Change Using CMIP6 Models. Submitted to GRL, doi TBD.
 ```
 
 Please cite that manuscript when using our scripts for future work. The manuscript is premised on global thermal expansion (GTE) and global surface air temperature (GSAT) data from CMIP6 models. This repository can be used for pulling CMIP6 data (in this case, global mean thermosteric sea-level change 'zostoga', gridded surface air temperature 'tas' and atmosphere cell area 'areacella') from ESGF using WGET, preprocessing raw (monthly mean intended, but possibly also other frequencies) 'zostoga' and 'tas' data, including time-merging, dedrifting and calculating area-weighted means, and analyzing the preprocessed data. The underlying data of the manuscript is available at: http://doi.org/10.4121/12958079.
