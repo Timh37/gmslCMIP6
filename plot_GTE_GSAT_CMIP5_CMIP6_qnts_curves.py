@@ -17,8 +17,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import os
 
-cmip6_path = '/Volumes/Naamloos/PhD_Data/CMIP6/ensemble_netcdfs'
-cmip5_path = '/Users/thermans/Documents/Data/CMIP6/GMSL_MonteCarlo_JG/input/CMIP5/'
+cmip6_path = 'insert_path_here'
+cmip5_path = 'insert_path_here'
 
 RCPtoSSP = { #dictionary linking ssps and rcps
 	"rcp26": "ssp126",
@@ -27,8 +27,8 @@ RCPtoSSP = { #dictionary linking ssps and rcps
     }        
 
 #read cmip6 data
-cmip6_gsat = xr.open_dataset(os.path.join(cmip6_path,'tas_CMIP6_n17_1986_2005ref_1850_2100_am.nc'),decode_times=True)
-cmip6_gte = xr.open_dataset(os.path.join(cmip6_path,'zostoga_CMIP6_n17_1986_2005ref_qdedr_1850_2100_am.nc'),decode_times=True)
+cmip6_gsat = xr.open_dataset(os.path.join(cmip6_path,'tas_CMIP6_n20_1986_2005ref_1850_2100_am.nc'),decode_times=True)
+cmip6_gte = xr.open_dataset(os.path.join(cmip6_path,'zostoga_CMIP6_n20_1986_2005ref_qdedr_1850_2100_am.nc'),decode_times=True)
 
 #calculate quantiles
 cmip6_gsat_qnts = cmip6_gsat.tas.quantile([.05,.5,.95],dim='model',skipna=True)  
