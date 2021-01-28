@@ -2,7 +2,7 @@
 This repository contains several scripts that were used for the results of:
 
 ```
-T. H. J. Hermans, J. M. Gregory, M. D. Palmer, M. Ringer, C. A. Katsman, A. B. A. Slangen (2021). 
+T. H. J. Hermans, J. M. Gregory, M. D. Palmer, M. A. Ringer, C. A. Katsman, A. B. A. Slangen (2021). 
 Projecting Global Mean Sea-Level Change Using CMIP6 Models. Submitted to GRL, doi TBD.
 ```
 
