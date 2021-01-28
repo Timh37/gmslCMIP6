@@ -77,8 +77,8 @@ def cmip6_merge_raw_timechunks(in_dir,out_dir,variable):
 '''
 if __name__ == '__main__':
     variable = 'zostoga'
-    in_dir = '/Volumes/Naamloos/PhD_Data/CMIP6/downloading/' + variable #+'/'+model+'/'
-    out_dir = '/Volumes/Naamloos/PhD_Data/CMIP6/test_mergetime/'+variable
+    in_dir = 'insert_path_here' + variable #+'/'+model+'/'
+    out_dir = 'insert_path_here'+variable
 
     cmip6_merge_raw_timechunks(in_dir,out_dir,variable)
 '''
