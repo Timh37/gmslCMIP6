@@ -33,10 +33,10 @@ def getAreaWeightedMean(data, cell_area, realm): #remove area weighted mean from
 
 '''
 if __name__ == '__main__':
-    path = '/Volumes/Naamloos/PhD_Data/CMIP6/downloading/07_2020/areacello/CanESM5/'
+    path = 'insert_path_here/areacello/CanESM5/'
 
     area = xr.open_dataset(path+'areacello_Ofx_CanESM5_historical_r1i1p1f1_gn.nc') #apply zos mask in case areacello is not masked on land
-    ssp585 = xr.open_dataset('/Volumes/Naamloos/PhD_Data/CMIP6/time_merged/zos/CanESM5/zos_Omon_CanESM5_ssp585_r1i1p1f1_gn_201501-218012.nc')
+    ssp585 = xr.open_dataset('insert_path_here/zos/CanESM5/zos_Omon_CanESM5_ssp585_r1i1p1f1_gn_201501-218012.nc')
 
     test= getAreaWeightedMean(ssp585.zos,area.areacello,'atmos')
     plt.figure()
